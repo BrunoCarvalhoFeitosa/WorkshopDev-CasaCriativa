@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+.b-modal {
+    display: none;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #FF5E84;
+    width: 100%;
+    height: 100vh
+}
+
+.b-modal__content {
+    margin-top: 30px;
+    margin-top: 1.875rem;
+    color: #fff
+}
+
+.b-modal__content h1 {
+    text-align: center;
+    text-transform: uppercase
+}
+
+.b-modal__content form {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 980px;
+    max-width: 61.25rem
+}
+
+.b-modal__content form .input-group {
+    margin: 8px 0
+}
+
+.b-modal__content form .flex {
+    display: flex;
+    justify-content: space-between
+}
+
+.b-modal__content form .flex div.left {
+    width: 46%
+}
+
+.b-modal__content form .flex div.right {
+    width: 46%
+}
+
+.b-modal__content form input, .b-modal__content form textarea {
+    width: 100%;
+    padding: 10px;
+    padding: .625rem;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-size: .875rem
+}
+
+.b-modal__content form label {
+    font-size: 14px;
+    font-size: .875rem;
+    line-height: 32px;
+    line-height: 2rem
+}
+
+.b-modal__content form button {
+    margin-top: 6px;
+    margin-top: .375rem;
+    background: #fff;
+    outline: none;
+    width: 180px;
+    width: 11.25rem;
+    height: 40px;
+    height: 2.5rem;
+    border: none;
+    border-bottom: 2px solid #fff;
+    font-size: 12px;
+    font-size: .75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #FF5E84;
+    cursor: pointer;
+    transition: 0.7s background;
+    -moz-transition: 0.7s background;
+    -o-transition: 0.7s background;
+    -webkit-transition: 0.7s background
+}
+
+.b-modal__content form button:hover {
+    background: #000
+}
+
+.b-modal__close {
+    position: absolute;
+    top: 0;
+    right: 0
+}
+
+.b-modal__close button {
+    background: none;
+    border: none;
+    outline: none;
+    text-decoration: underline;
+    cursor: pointer
+}
+
+.b-modal__close button::before {
+    content: '';
+    display: block;
+    width: 48px;
+    width: 3rem;
+    height: 48px;
+    height: 3rem;
+    background: url("/icon-arrow-left.png");
+    opacity: .7
+}
+
+.b-container {
+    display: block !important;
+    margin: 30px auto !important
+}
+
+.b-container__header {
+    display: flex;
+    justify-content: space-between
+}
+
+.b-container__header nav {
+    display: flex;
+    align-items: center;
+    list-style: none
+}
+
+.b-container__header nav li a {
+    margin: 0 8px;
+    font-size: 13px;
+    font-size: .8125rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000
+}
+
+.b-container__header nav li:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FF5E84;
+    width: 130px;
+    width: 8.125rem;
+    height: 30px;
+    height: 1.875rem;
+    cursor: pointer;
+    transition: 0.7s background;
+    -moz-transition: 0.7s background;
+    -o-transition: 0.7s background;
+    -webkit-transition: 0.7s background
+}
+
+.b-container__header nav li:last-child:hover {
+    background: #000
+}
+
+.b-container__header nav li:last-child a {
+    color: #fff
+}
+
+.b-container__ideasTitle {
+    margin: 30px 0;
+    text-align: center
+}
+
+.b-container__ideasTitle p, .b-container__ideasTitle h1 {
+    margin: 0
+}
+
+.b-container__ideasTitle p {
+    opacity: .7
+}
+
+.b-container__ideasTitle h1 {
+    font-size: 28px;
+    font-size: 1.75rem
+}
+
+.b-container__ideas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px
+}
+
+.b-container__ideas .b-container__last-ideas-idea {
+    margin-bottom: 0
+}

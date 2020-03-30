@@ -1,0 +1,13 @@
+{% for idea in ideas %}
+    <section class="b-container__last-ideas-idea">
+        <img src="{{idea.image}}" title="{{idea.title}}" alt="Imagem de Curso de Programação" />
+        <div class="content">
+            <h3 class="title">{{idea.title}}</h3>
+            <p class="subtitle">{{idea.category}}</p>
+            <div class="description">
+                <p>{{idea.description}}</p>
+                <a href="{{idea.url}}">Ir para a ideia</a>
+            </div>
+        </div>
+    </section>
+{% endfor %}

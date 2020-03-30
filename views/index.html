@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Bruno Carvalho Feitosa" />
+    <meta name="description"content="Aplicativo desenvolvido no WorkshopDev Especial Semana OmniStack 11.0, este aplicativo serve para cadastrar idéias durante a crise de Covid-19" />
+    <meta name="keywords" content="Aplicativo, WorkshopDev Espcial, Semana OmniStack 11.0, Cadastrar Ideias" />
+    <link rel="stylesheet" type="text/css" href="/index.css" />
+    <link rel="icon" type="image/png" href="../fav.png" />
+    <title>Casa Criativa</title>
+</head>
+
+<body>
+    <section class="b-container">
+        <section class="b-container__intro">
+            <a href="/"><img src="/logo.png" title="Casa Criativa" alt="Logomarca Casa Criativa" /></a>
+            <div class="text">
+                <p>Ficar em casa em períodos longos, não deve ser nada fácil.</p>
+                <p>Iremos catalogar idéias, <strong>brincadeiras, jogos, filmes, livros, cursos, dicas</strong> e tudo
+                    que for necessário para tornar esse momento mais interessante.</p>
+                <p>Comece clicando em ver ideias para ver as ideias cadastradas e contribua adicionando a sua ideia.</p>
+            </div>
+            <div class="controls">
+                <button class="more-ideas">+ Adicionar Idéia</button>
+                <button class="see-ideas"><a href="/ideias">Ver Idéias</a></button></div>
+                <p class="about">Com ♥️ <a href="http://rocketseat.com.br">Rocketseat</a></p>
+        </section>
+        <section class="b-container__last-ideas">
+            {% include "all_ideas.html" %}
+        </section>
+        <footer class="b-footer">
+            <div class="b-footer__social"></div>
+        </footer>
+    </section>
+    
+    {% include "modal.html" %}
+</body>
+<script src="/script.js"></script>
+
+</html>

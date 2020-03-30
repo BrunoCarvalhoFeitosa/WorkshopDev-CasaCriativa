@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+.b-modal {
+    display: none;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #FF5E84;
+    width: 100%;
+    height: 100vh
+}
+
+.b-modal__content {
+    margin-top: 30px;
+    margin-top: 1.875rem;
+    color: #fff
+}
+
+.b-modal__content h1 {
+    text-align: center;
+    text-transform: uppercase
+}
+
+.b-modal__content form {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 980px;
+    max-width: 61.25rem
+}
+
+.b-modal__content form .input-group {
+    margin: 8px 0
+}
+
+.b-modal__content form .flex {
+    display: flex;
+    justify-content: space-between
+}
+
+.b-modal__content form .flex div.left {
+    width: 46%
+}
+
+.b-modal__content form .flex div.right {
+    width: 46%
+}
+
+.b-modal__content form input, .b-modal__content form textarea {
+    width: 100%;
+    padding: 10px;
+    padding: .625rem;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-size: .875rem
+}
+
+.b-modal__content form label {
+    font-size: 14px;
+    font-size: .875rem;
+    line-height: 32px;
+    line-height: 2rem
+}
+
+.b-modal__content form button {
+    margin-top: 6px;
+    margin-top: .375rem;
+    background: #fff;
+    outline: none;
+    width: 180px;
+    width: 11.25rem;
+    height: 40px;
+    height: 2.5rem;
+    border: none;
+    border-bottom: 2px solid #fff;
+    font-size: 12px;
+    font-size: .75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #FF5E84;
+    cursor: pointer;
+    transition: 0.7s background;
+    -moz-transition: 0.7s background;
+    -o-transition: 0.7s background;
+    -webkit-transition: 0.7s background
+}
+
+.b-modal__content form button:hover {
+    background: #000
+}
+
+.b-modal__close {
+    position: absolute;
+    top: 0;
+    right: 0
+}
+
+.b-modal__close button {
+    background: none;
+    border: none;
+    outline: none;
+    text-decoration: underline;
+    cursor: pointer
+}
+
+.b-modal__close button::before {
+    content: '';
+    display: block;
+    width: 48px;
+    width: 3rem;
+    height: 48px;
+    height: 3rem;
+    background: url("/icon-arrow-left.png");
+    opacity: .7
+}
+
+body {
+    margin: 0;
+    background: #E5E5E5;
+    color: #25282B;
+    font-family: 'Montserrat', sans-serif
+}
+
+body p, body .description {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 24px;
+    line-height: 1.5rem;
+    letter-spacing: .1px;
+    letter-spacing: .00625rem
+}
+
+body .b-container {
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 980px;
+    max-width: 61.25rem
+}
+
+body .b-container__intro {
+    width: 300px;
+    width: 18.75rem;
+    margin: 37px 54px 0px 0px
+}
+
+body .b-container__intro .text {
+    margin: 32px 0
+}
+
+body .b-container__intro .controls {
+    display: flex;
+    justify-content: space-evenly
+}
+
+body .b-container__intro .controls button {
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-size: .875rem;
+    line-height: 18px;
+    line-height: 1.125rem;
+    letter-spacing: .2px;
+    letter-spacing: .0125rem;
+    font-weight: bold;
+    cursor: pointer
+}
+
+body .b-container__intro .controls button.more-ideas {
+    text-decoration: underline;
+    color: #FF5E84;
+    background: none
+}
+
+body .b-container__intro .controls button.see-ideas {
+    background: #FF5E84;
+    width: 150px;
+    width: 9.375rem;
+    height: 40px;
+    height: 2.5rem;
+    box-shadow: 8px 8px 16px rgba(255, 94, 132, 0.196078)
+}
+
+body .b-container__intro .controls button.see-ideas a {
+    color: #fff;
+    text-decoration: none
+}
+
+body .b-container__intro .about {
+    margin-top: 34px;
+    margin-top: 2.125rem;
+    font-size: 14px;
+    font-size: .875rem;
+    line-height: 18px;
+    line-height: 1.125rem;
+    text-align: center;
+    color: #25282B
+}
+
+body .b-container__intro .about a {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #FF5E84
+}
+
+body .b-container__intro .about a:hover {
+    color: #FF5E84
+}
+
+body .b-container__last-ideas {
+    margin: 40px 0
+}
+
+body .b-container__last-ideas-idea {
+    display: flex;
+    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
+    padding: 32px;
+    padding: 2rem;
+    width: 430px;
+    max-width: 430px;
+    background: #fff;
+    border-radius: 8px;
+    border-radius: .5rem;
+    box-shadow: 0 4px 16px -8px rgba(1, 1, 1, 0.1)
+}
+
+body .b-container__last-ideas-idea>img {
+    width: 50px;
+    width: 3.75rem;
+    height: 50px;
+    height: 3.75rem;
+    margin-right: 32px;
+    margin-right: 2rem;
+    cursor: pointer
+}
+
+body .b-container__last-ideas-idea>img:hover {
+    transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    transition: 0.5s transform;
+    -moz-transition: 0.5s transform;
+    -o-transition: 0.5s transform;
+    -webkit-transition: 0.5s transform
+}
+
+body .b-container__last-ideas-idea .content>h3.title {
+    font-size: 15px;
+    font-size: .9375rem;
+    margin: 0
+}
+
+body .b-container__last-ideas-idea .content p.subtitle {
+    margin: 8px 0;
+    font-size: 13px;
+    font-size: .8125rem;
+    color: #777
+}
+
+body .b-container__last-ideas-idea .content .description {
+    margin: 16px 0
+}
+
+body .b-container__last-ideas-idea .content .description p {
+    font-size: 13px;
+    font-size: .8125rem
+}
+
+body .b-container__last-ideas-idea .content .description a {
+    position: relative;
+    top: 6px;
+    top: .375rem;
+    padding: 8px;
+    padding: .5rem;
+    font-size: 14px;
+    font-size: .875rem;
+    text-decoration: none;
+    color: #FF5E84
+}
+
+body .b-container__last-ideas-idea .content .description a:hover {
+    text-decoration: underline
+}
+
+.hide {
+    display: flex !important
+}
